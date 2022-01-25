@@ -1,0 +1,51 @@
+<?php session_start(); ?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Connexion</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="css/connexion.css">
+    </head>
+    <body>
+        <form id="connexion">
+            <div><h1>Se Connecter</h1>
+            <h3>Vous êtes un nouvel utilisateur ?<br>
+                <span onclick="inscription()">Créez un compte</span></h3></div>
+
+            <input type="text" name="identifiant" id="identifiant" placeholder="Identifiant">
+            <input type="password" name="password" id="password" placeholder="Mot De Passe">
+
+            <a href="index.html"><input type="button" name="connexion" class="connexion_submit" value="Envoyer"></a>
+
+            <article><div id="ou_before"></div><p id="ou">Ou</p><div id="ou_after"></div></article>
+
+            <div id="google"><img src="images/google.svg"><p>continuer avec google</p></div>
+            <div id="facebook"><img src="images/facebook.svg"><p>continuer avec facebook</p></div>
+            <div id="apple"><img src="images/apple.svg"><p>continuer avec apple</p></div>
+        </form>
+
+
+        <form id="inscription">
+            <div><h1>S'Inscrire</h1>
+            <h3>Vous êtes un nouvel utilisateur ?<br>
+                <span onclick="connexion()">Connecter Vous</span></h3></div>
+
+            <div class="div_input"><input type="text" name="nom" id="nom" placeholder="Nom">
+            <input type="text" name="prenom" id="prenom" placeholder="Prénom"></div>
+
+            <div class="div_input"><input type="text" name="identifiant" id="identifiant" placeholder="Identifiant">
+            <input type="password" name="password" id="password" placeholder="Mot De Passe"></div>
+
+            <a href="index.html"><input type="button" name="connexion" class="connexion_submit" value="Envoyer"></a>
+
+            <article><div id="ou_before"></div><p id="ou">Ou</p><div id="ou_after"></div></article>
+
+            <div id="google"><img src="images/google.svg"><p>continuer avec google</p></div>
+            <div id="facebook"><img src="images/facebook.svg"><p>continuer avec facebook</p></div>
+            <div id="apple"><img src="images/apple.svg"><p>continuer avec apple</p></div>
+        </form>
+
+        <script src="js/connexion.js"></script>
+    </body>
+</html>
